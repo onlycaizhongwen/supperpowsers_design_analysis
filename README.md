@@ -31,6 +31,7 @@ git submodule update --init --recursive
    - [systematic-debugging](docs/codex/v1/designs/skills/systematic-debugging-skill-analysis.md)
 5. [Overall Flow Diagram HTML Preview](docs/codex/v1/designs/assets/superpowers-flow.html)
 6. [Branch Flow Diagrams HTML Preview](docs/codex/v1/designs/assets/superpowers-branch-flows.html)
+7. [Skill Flow Diagrams HTML Preview](docs/codex/v1/designs/assets/superpowers-skill-flows.html)
 
 ## What Is Covered
 

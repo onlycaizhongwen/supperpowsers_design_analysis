@@ -33,6 +33,8 @@ frontmatter 明确要求在任何创意工作前使用，包括：
 
 ## 4. 执行流程
 
+![brainstorming 技能流程图](../assets/skill-brainstorming-flow.svg)
+
 ```text
 用户提出想法或功能请求
   |

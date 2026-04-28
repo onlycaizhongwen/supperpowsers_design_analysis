@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="850" viewBox="0 0 1180 850" role="img" aria-labelledby="title desc">
+  <title id="title">subagent-driven-development 技能流程图</title>
+  <desc id="desc">展示子代理开发流程中的实现、规格评审、质量评审和回修闭环。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker><style>.bg{fill:#fff;stroke:#cbd5e1;stroke-width:1.2;rx:12}.start{fill:#fef3c7;stroke:#d97706;stroke-width:1.4;rx:10}.impl{fill:#ecfdf5;stroke:#059669;stroke-width:1.4;rx:10}.rev{fill:#fdf2f8;stroke:#db2777;stroke-width:1.4;rx:10}.box{fill:#f8fafc;stroke:#334155;stroke-width:1.3;rx:10}.warn{fill:#fff7ed;stroke:#ea580c;stroke-width:1.4;rx:10}.line{stroke:#334155;stroke-width:1.4;fill:none;marker-end:url(#arrow)}.thin{stroke:#94a3b8;stroke-width:1.2;fill:none;marker-end:url(#arrow)}text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#0f172a}.t{font-size:24px;font-weight:700}.h{font-size:16px;font-weight:700}.s{font-size:13px;font-weight:500;fill:#475569}</style></defs>
+  <rect x="20" y="20" width="1140" height="810" class="bg"/>
+  <text x="590" y="58" text-anchor="middle" class="t">subagent-driven-development 技能流程</text>
+  <rect x="440" y="90" width="300" height="62" class="start"/><text x="590" y="117" text-anchor="middle" class="h">读取实施计划</text><text x="590" y="139" text-anchor="middle" class="s">一次性提取任务全文和上下文</text>
+  <rect x="440" y="205" width="300" height="62" class="box"/><text x="590" y="232" text-anchor="middle" class="h">创建 Todo / 选择下一个任务</text><text x="590" y="254" text-anchor="middle" class="s">控制器准备完整任务文本</text>
+  <rect x="110" y="340" width="230" height="66" class="impl"/><text x="225" y="367" text-anchor="middle" class="h">派发实现子代理</text><text x="225" y="389" text-anchor="middle" class="s">实现、测试、提交、自查</text>
+  <rect x="475" y="340" width="230" height="66" class="warn"/><text x="590" y="367" text-anchor="middle" class="h">子代理需要上下文？</text><text x="590" y="389" text-anchor="middle" class="s">NEEDS_CONTEXT / BLOCKED</text>
+  <rect x="840" y="340" width="230" height="66" class="rev"/><text x="955" y="367" text-anchor="middle" class="h">规格符合性评审</text><text x="955" y="389" text-anchor="middle" class="s">先确认做对了什么</text>
+  <rect x="840" y="500" width="230" height="66" class="rev"/><text x="955" y="527" text-anchor="middle" class="h">代码质量评审</text><text x="955" y="549" text-anchor="middle" class="s">再确认做得好不好</text>
+  <rect x="475" y="500" width="230" height="66" class="warn"/><text x="590" y="527" text-anchor="middle" class="h">评审发现问题？</text><text x="590" y="549" text-anchor="middle" class="s">回到同一实现子代理修正</text>
+  <rect x="110" y="660" width="230" height="66" class="box"/><text x="225" y="687" text-anchor="middle" class="h">标记任务完成</text><text x="225" y="709" text-anchor="middle" class="s">继续下一个任务</text>
+  <rect x="475" y="660" width="230" height="66" class="rev"/><text x="590" y="687" text-anchor="middle" class="h">最终代码评审</text><text x="590" y="709" text-anchor="middle" class="s">全量实现检查</text>
+  <rect x="840" y="660" width="230" height="66" class="impl"/><text x="955" y="687" text-anchor="middle" class="h">finishing 分支</text><text x="955" y="709" text-anchor="middle" class="s">验证、合并、PR 或保留</text>
+  <path d="M590 152 L590 205" class="line"/><path d="M440 236 C360 260 225 295 225 340" class="thin"/><path d="M340 373 L475 373" class="line"/><path d="M705 373 L840 373" class="line"/><path d="M955 406 L955 500" class="line"/><path d="M840 533 L705 533" class="line"/><path d="M590 500 C520 455 225 455 225 406" class="thin"/><path d="M840 533 C760 610 225 590 225 660" class="line"/><path d="M340 693 L475 693" class="line"/><path d="M705 693 L840 693" class="line"/>
+  <text x="385" y="463" text-anchor="middle" class="s">补上下文或修正后重新评审</text>
+</svg>

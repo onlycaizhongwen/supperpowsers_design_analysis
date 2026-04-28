@@ -14,6 +14,7 @@
    - [systematic-debugging 技能分析](skills/systematic-debugging-skill-analysis.md)
 4. [总体流程图 HTML 预览](assets/superpowers-flow.html)
 5. [分支流程图 HTML 预览](assets/superpowers-branch-flows.html)
+6. [单技能流程图 HTML 预览](assets/superpowers-skill-flows.html)
 
 ## 核心结论
 
@@ -52,6 +53,11 @@
 | 实现执行分支 | `assets/superpowers-implementation-branch-flow.svg` |
 | 调试修复分支 | `assets/superpowers-debug-branch-flow.svg` |
 | 评审收尾分支 | `assets/superpowers-finish-branch-flow.svg` |
+| using-superpowers 技能流程 | `assets/skill-using-superpowers-flow.svg` |
+| subagent-driven-development 技能流程 | `assets/skill-subagent-driven-development-flow.svg` |
+| brainstorming 技能流程 | `assets/skill-brainstorming-flow.svg` |
+| test-driven-development 技能流程 | `assets/skill-test-driven-development-flow.svg` |
+| systematic-debugging 技能流程 | `assets/skill-systematic-debugging-flow.svg` |
 
 ## 维护提示
 

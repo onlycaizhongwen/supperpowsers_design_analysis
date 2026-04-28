@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="720" viewBox="0 0 1120 720" role="img" aria-labelledby="title desc">
+  <title id="title">test-driven-development 技能流程图</title>
+  <desc id="desc">展示 RED GREEN REFACTOR 流程和失败回路。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker><style>.bg{fill:#fff;stroke:#cbd5e1;stroke-width:1.2;rx:12}.red{fill:#fee2e2;stroke:#dc2626;stroke-width:1.5;rx:10}.green{fill:#dcfce7;stroke:#16a34a;stroke-width:1.5;rx:10}.blue{fill:#dbeafe;stroke:#2563eb;stroke-width:1.5;rx:10}.warn{fill:#fff7ed;stroke:#ea580c;stroke-width:1.4;rx:10}.line{stroke:#334155;stroke-width:1.4;fill:none;marker-end:url(#arrow)}.thin{stroke:#94a3b8;stroke-width:1.2;fill:none;marker-end:url(#arrow)}text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#0f172a}.t{font-size:24px;font-weight:700}.h{font-size:16px;font-weight:700}.s{font-size:13px;font-weight:500;fill:#475569}</style></defs>
+  <rect x="20" y="20" width="1080" height="680" class="bg"/>
+  <text x="560" y="58" text-anchor="middle" class="t">test-driven-development 技能流程</text>
+  <rect x="430" y="90" width="260" height="58" class="warn"/><text x="560" y="124" text-anchor="middle" class="h">要实现功能 / 修 bug</text>
+  <rect x="115" y="205" width="230" height="72" class="red"/><text x="230" y="233" text-anchor="middle" class="h">RED</text><text x="230" y="255" text-anchor="middle" class="s">先写最小失败测试</text>
+  <rect x="445" y="205" width="230" height="72" class="warn"/><text x="560" y="233" text-anchor="middle" class="h">确认失败原因正确</text><text x="560" y="255" text-anchor="middle" class="s">不是拼写或配置错误</text>
+  <rect x="775" y="205" width="230" height="72" class="green"/><text x="890" y="233" text-anchor="middle" class="h">GREEN</text><text x="890" y="255" text-anchor="middle" class="s">写最小生产代码</text>
+  <rect x="445" y="370" width="230" height="72" class="green"/><text x="560" y="398" text-anchor="middle" class="h">确认测试通过</text><text x="560" y="420" text-anchor="middle" class="s">当前和相关测试全绿</text>
+  <rect x="115" y="370" width="230" height="72" class="blue"/><text x="230" y="398" text-anchor="middle" class="h">REFACTOR</text><text x="230" y="420" text-anchor="middle" class="s">只在全绿后清理</text>
+  <rect x="775" y="370" width="230" height="72" class="warn"/><text x="890" y="398" text-anchor="middle" class="h">测试不对？</text><text x="890" y="420" text-anchor="middle" class="s">回到对应阶段修正</text>
+  <rect x="430" y="555" width="260" height="58" class="blue"/><text x="560" y="589" text-anchor="middle" class="h">下一个行为继续循环</text>
+  <path d="M560 148 C560 180 230 175 230 205" class="thin"/><path d="M345 241 L445 241" class="line"/><path d="M675 241 L775 241" class="line"/><path d="M890 277 C890 340 560 315 560 370" class="line"/><path d="M445 406 L345 406" class="line"/><path d="M230 442 C230 510 560 500 560 555" class="line"/><path d="M775 406 L675 406" class="thin"/><path d="M890 370 C890 315 560 320 560 277" class="thin"/><text x="735" y="325" text-anchor="middle" class="s">失败原因不对或测试未过，不能继续</text>
+</svg>

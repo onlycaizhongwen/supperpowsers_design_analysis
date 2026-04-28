@@ -32,6 +32,8 @@
 
 ## 4. 执行流程
 
+![using-superpowers 技能流程图](../assets/skill-using-superpowers-flow.svg)
+
 ```text
 收到用户消息
   |

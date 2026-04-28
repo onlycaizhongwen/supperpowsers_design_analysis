@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="700" viewBox="0 0 1120 700" role="img" aria-labelledby="title desc">
+  <title id="title">using-superpowers 技能流程图</title>
+  <desc id="desc">展示 using-superpowers 如何在用户消息到达后检查并加载相关 skill。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker><style>.bg{fill:#fff;stroke:#cbd5e1;stroke-width:1.2;rx:12}.core{fill:#fef3c7;stroke:#d97706;stroke-width:1.4;rx:10}.box{fill:#f8fafc;stroke:#334155;stroke-width:1.3;rx:10}.skill{fill:#ecfdf5;stroke:#059669;stroke-width:1.4;rx:10}.warn{fill:#fff7ed;stroke:#ea580c;stroke-width:1.4;rx:10}.line{stroke:#334155;stroke-width:1.4;fill:none;marker-end:url(#arrow)}.thin{stroke:#94a3b8;stroke-width:1.2;fill:none;marker-end:url(#arrow)}text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#0f172a}.t{font-size:24px;font-weight:700}.h{font-size:16px;font-weight:700}.s{font-size:13px;font-weight:500;fill:#475569}</style></defs>
+  <rect x="20" y="20" width="1080" height="660" class="bg"/>
+  <text x="560" y="58" text-anchor="middle" class="t">using-superpowers 技能流程</text>
+  <rect x="430" y="90" width="260" height="58" class="core"/><text x="560" y="124" text-anchor="middle" class="h">用户消息到达</text>
+  <rect x="430" y="190" width="260" height="66" class="box"/><text x="560" y="217" text-anchor="middle" class="h">是否是被派发的子代理？</text><text x="560" y="239" text-anchor="middle" class="s">SUBAGENT-STOP</text>
+  <rect x="115" y="315" width="230" height="66" class="warn"/><text x="230" y="342" text-anchor="middle" class="h">是</text><text x="230" y="364" text-anchor="middle" class="s">跳过入口技能</text>
+  <rect x="445" y="315" width="230" height="66" class="box"/><text x="560" y="342" text-anchor="middle" class="h">是否可能有适用 skill？</text><text x="560" y="364" text-anchor="middle" class="s">哪怕只有 1%</text>
+  <rect x="775" y="315" width="230" height="66" class="box"/><text x="890" y="342" text-anchor="middle" class="h">无适用 skill</text><text x="890" y="364" text-anchor="middle" class="s">普通响应或执行</text>
+  <rect x="445" y="455" width="230" height="66" class="skill"/><text x="560" y="482" text-anchor="middle" class="h">调用 Skill 工具</text><text x="560" y="504" text-anchor="middle" class="s">按平台工具映射加载</text>
+  <rect x="180" y="570" width="230" height="58" class="skill"/><text x="295" y="604" text-anchor="middle" class="h">宣告使用哪个 skill</text>
+  <rect x="445" y="570" width="230" height="58" class="skill"/><text x="560" y="596" text-anchor="middle" class="h">若有 checklist</text><text x="560" y="616" text-anchor="middle" class="s">建立任务项</text>
+  <rect x="710" y="570" width="230" height="58" class="skill"/><text x="825" y="604" text-anchor="middle" class="h">严格遵守 skill</text>
+  <path d="M560 148 L560 190" class="line"/><path d="M430 223 C360 240 230 270 230 315" class="thin"/><path d="M560 256 L560 315" class="line"/><path d="M675 348 L775 348" class="thin"/><path d="M560 381 L560 455" class="line"/><path d="M560 521 C560 550 295 545 295 570" class="thin"/><path d="M560 521 L560 570" class="line"/><path d="M560 521 C560 550 825 545 825 570" class="thin"/>
+</svg>

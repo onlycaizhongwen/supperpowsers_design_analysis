@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="820" viewBox="0 0 1120 820" role="img" aria-labelledby="title desc">
+  <title id="title">brainstorming 技能流程图</title>
+  <desc id="desc">展示从模糊想法到设计确认再进入 writing-plans 的流程。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker><style>.bg{fill:#fff;stroke:#cbd5e1;stroke-width:1.2;rx:12}.start{fill:#fef3c7;stroke:#d97706;stroke-width:1.4;rx:10}.box{fill:#eff6ff;stroke:#2563eb;stroke-width:1.4;rx:10}.doc{fill:#ecfdf5;stroke:#059669;stroke-width:1.4;rx:10}.gate{fill:#fff7ed;stroke:#ea580c;stroke-width:1.4;rx:10}.line{stroke:#334155;stroke-width:1.4;fill:none;marker-end:url(#arrow)}.thin{stroke:#94a3b8;stroke-width:1.2;fill:none;marker-end:url(#arrow)}text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#0f172a}.t{font-size:24px;font-weight:700}.h{font-size:16px;font-weight:700}.s{font-size:13px;font-weight:500;fill:#475569}</style></defs>
+  <rect x="20" y="20" width="1080" height="780" class="bg"/>
+  <text x="560" y="58" text-anchor="middle" class="t">brainstorming 技能流程</text>
+  <rect x="430" y="90" width="260" height="58" class="start"/><text x="560" y="124" text-anchor="middle" class="h">创意 / 新功能请求</text>
+  <rect x="430" y="190" width="260" height="62" class="box"/><text x="560" y="216" text-anchor="middle" class="h">探索项目上下文</text><text x="560" y="238" text-anchor="middle" class="s">文件、文档、近期提交</text>
+  <rect x="130" y="315" width="230" height="66" class="box"/><text x="245" y="342" text-anchor="middle" class="h">需要视觉辅助？</text><text x="245" y="364" text-anchor="middle" class="s">单独询问 visual companion</text>
+  <rect x="445" y="315" width="230" height="66" class="box"/><text x="560" y="342" text-anchor="middle" class="h">逐个澄清问题</text><text x="560" y="364" text-anchor="middle" class="s">目标、约束、成功标准</text>
+  <rect x="760" y="315" width="230" height="66" class="box"/><text x="875" y="342" text-anchor="middle" class="h">提出 2-3 个方案</text><text x="875" y="364" text-anchor="middle" class="s">取舍与推荐</text>
+  <rect x="445" y="465" width="230" height="66" class="gate"/><text x="560" y="492" text-anchor="middle" class="h">分段展示设计</text><text x="560" y="514" text-anchor="middle" class="s">未确认前禁止实现</text>
+  <rect x="145" y="590" width="230" height="66" class="doc"/><text x="260" y="617" text-anchor="middle" class="h">写设计文档</text><text x="260" y="639" text-anchor="middle" class="s">spec 保存并提交</text>
+  <rect x="445" y="590" width="230" height="66" class="doc"/><text x="560" y="617" text-anchor="middle" class="h">设计自查</text><text x="560" y="639" text-anchor="middle" class="s">占位、矛盾、范围、歧义</text>
+  <rect x="745" y="590" width="230" height="66" class="gate"/><text x="860" y="617" text-anchor="middle" class="h">用户复核文档</text><text x="860" y="639" text-anchor="middle" class="s">修改或批准</text>
+  <rect x="445" y="720" width="230" height="58" class="doc"/><text x="560" y="754" text-anchor="middle" class="h">进入 writing-plans</text>
+  <path d="M560 148 L560 190" class="line"/><path d="M560 252 C560 295 245 285 245 315" class="thin"/><path d="M360 348 L445 348" class="line"/><path d="M675 348 L760 348" class="line"/><path d="M875 381 C875 440 560 420 560 465" class="line"/><path d="M560 531 C560 570 260 560 260 590" class="thin"/><path d="M375 623 L445 623" class="line"/><path d="M675 623 L745 623" class="line"/><path d="M860 656 C860 700 560 690 560 720" class="line"/><path d="M860 590 C860 550 560 565 560 531" class="thin"/><text x="715" y="555" text-anchor="middle" class="s">用户要求修改则回到设计</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="820" viewBox="0 0 1120 820" role="img" aria-labelledby="title desc">
+  <title id="title">systematic-debugging 技能流程图</title>
+  <desc id="desc">展示从问题出现到根因调查、模式分析、假设验证、TDD 修复和完成验证的流程。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker><style>.bg{fill:#fff;stroke:#cbd5e1;stroke-width:1.2;rx:12}.start{fill:#fff7ed;stroke:#ea580c;stroke-width:1.4;rx:10}.phase{fill:#eff6ff;stroke:#2563eb;stroke-width:1.4;rx:10}.fix{fill:#ecfdf5;stroke:#059669;stroke-width:1.4;rx:10}.warn{fill:#fee2e2;stroke:#dc2626;stroke-width:1.4;rx:10}.line{stroke:#334155;stroke-width:1.4;fill:none;marker-end:url(#arrow)}.thin{stroke:#94a3b8;stroke-width:1.2;fill:none;marker-end:url(#arrow)}text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#0f172a}.t{font-size:24px;font-weight:700}.h{font-size:16px;font-weight:700}.s{font-size:13px;font-weight:500;fill:#475569}</style></defs>
+  <rect x="20" y="20" width="1080" height="780" class="bg"/>
+  <text x="560" y="58" text-anchor="middle" class="t">systematic-debugging 技能流程</text>
+  <rect x="425" y="90" width="270" height="58" class="start"/><text x="560" y="124" text-anchor="middle" class="h">bug / 测试失败 / 异常行为</text>
+  <rect x="115" y="215" width="230" height="72" class="phase"/><text x="230" y="243" text-anchor="middle" class="h">Phase 1 根因调查</text><text x="230" y="265" text-anchor="middle" class="s">读错误、复现、查变更、追数据流</text>
+  <rect x="445" y="215" width="230" height="72" class="phase"/><text x="560" y="243" text-anchor="middle" class="h">Phase 2 模式分析</text><text x="560" y="265" text-anchor="middle" class="s">找工作样例、比较差异</text>
+  <rect x="775" y="215" width="230" height="72" class="phase"/><text x="890" y="243" text-anchor="middle" class="h">Phase 3 假设验证</text><text x="890" y="265" text-anchor="middle" class="s">单一假设、最小实验</text>
+  <rect x="280" y="420" width="240" height="72" class="fix"/><text x="400" y="448" text-anchor="middle" class="h">Phase 4 TDD 修复</text><text x="400" y="470" text-anchor="middle" class="s">失败测试 -> 单一修复</text>
+  <rect x="640" y="420" width="240" height="72" class="fix"/><text x="760" y="448" text-anchor="middle" class="h">验证修复</text><text x="760" y="470" text-anchor="middle" class="s">测试通过、回归无破坏</text>
+  <rect x="115" y="600" width="250" height="66" class="warn"/><text x="240" y="627" text-anchor="middle" class="h">修复失败？</text><text x="240" y="649" text-anchor="middle" class="s">回到调查或新假设</text>
+  <rect x="435" y="600" width="250" height="66" class="warn"/><text x="560" y="627" text-anchor="middle" class="h">3 次失败？</text><text x="560" y="649" text-anchor="middle" class="s">停止并质疑架构</text>
+  <rect x="755" y="600" width="250" height="66" class="fix"/><text x="880" y="627" text-anchor="middle" class="h">完成前验证</text><text x="880" y="649" text-anchor="middle" class="s">证据支持完成声明</text>
+  <path d="M560 148 C560 185 230 180 230 215" class="thin"/><path d="M345 251 L445 251" class="line"/><path d="M675 251 L775 251" class="line"/><path d="M890 287 C890 370 400 345 400 420" class="line"/><path d="M520 456 L640 456" class="line"/><path d="M760 492 C760 560 880 545 880 600" class="line"/><path d="M640 456 C560 540 240 520 240 600" class="thin"/><path d="M365 633 L435 633" class="thin"/><path d="M240 600 C240 520 230 365 230 287" class="thin"/>
+</svg>

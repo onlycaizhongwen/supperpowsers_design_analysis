@@ -31,6 +31,8 @@ NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST
 
 ## 4. 四阶段流程
 
+![systematic-debugging 技能流程图](../assets/skill-systematic-debugging-flow.svg)
+
 ```text
 出现 bug / 失败 / 异常
   |

@@ -29,6 +29,8 @@ NO PRODUCTION CODE WITHOUT A FAILING TEST FIRST
 
 ## 4. 执行流程
 
+![test-driven-development 技能流程图](../assets/skill-test-driven-development-flow.svg)
+
 ```text
 选择一个行为
   |

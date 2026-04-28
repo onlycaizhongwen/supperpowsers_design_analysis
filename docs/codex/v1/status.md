@@ -22,7 +22,7 @@
 | 架构说明 | 已完成 | 已输出总体架构、模块职责、加载流程、开发方法论流程、子代理流程和维护发布脉络。 |
 | 分支流程说明 | 已完成 | 已输出平台接入、请求分流、设计计划、实现执行、调试修复、评审收尾六类分支说明与 SVG 流程图。 |
 | 仓库阅读入口 | 已完成 | 已新增根 README、文档入口页和结论到源码证据映射。 |
-| 单技能分析 | 已完成 | 已输出 `using-superpowers`、`subagent-driven-development`、`brainstorming`、`test-driven-development`、`systematic-debugging` 五份技能分析。 |
+| 单技能分析 | 已完成 | 已输出 `using-superpowers`、`subagent-driven-development`、`brainstorming`、`test-driven-development`、`systematic-debugging` 五份技能分析，并补充对应 SVG 流程图。 |
 | 代码修改 | 不适用 | 本次只做分析与文档产出。 |
 
 ## 变更记录
@@ -34,3 +34,4 @@
 - 2026-04-28：初始化当前项目为 Git 仓库，配置 `superpowers` 为 submodule，并推送到 `https://github.com/onlycaizhongwen/supperpowsers_design_analysis`。
 - 2026-04-28：新增根 `README.md` 和 `docs/codex/v1/designs/index.md`，集中提供阅读顺序、图表入口和源码证据映射。
 - 2026-04-28：新增五份核心单技能分析文档，并更新 README 与文档入口页。
+- 2026-04-28：为五份单技能分析补充 SVG 流程图和 HTML 总预览页。
