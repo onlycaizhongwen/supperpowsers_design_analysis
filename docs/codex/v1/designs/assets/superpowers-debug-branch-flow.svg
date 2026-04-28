@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="760" viewBox="0 0 1120 760" role="img" aria-labelledby="title desc">
+  <title id="title">调试修复分支流程图</title>
+  <desc id="desc">展示 systematic-debugging 与 TDD 修复的执行流程。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker><style>.bg{fill:#fff;stroke:#cbd5e1;stroke-width:1.2;rx:12}.d{fill:#fff7ed;stroke:#ea580c;stroke-width:1.4;rx:10}.tdd{fill:#ecfdf5;stroke:#059669;stroke-width:1.4;rx:10}.v{fill:#fdf2f8;stroke:#db2777;stroke-width:1.4;rx:10}.line{stroke:#334155;stroke-width:1.4;fill:none;marker-end:url(#arrow)}.thin{stroke:#94a3b8;stroke-width:1.2;fill:none;marker-end:url(#arrow)}text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#0f172a}.title{font-size:24px;font-weight:700}.h{font-size:16px;font-weight:700}.s{font-size:13px;font-weight:500;fill:#475569}</style></defs>
+  <rect x="20" y="20" width="1080" height="720" class="bg"/>
+  <text x="560" y="58" text-anchor="middle" class="title">调试修复分支</text>
+  <rect x="425" y="90" width="270" height="58" class="d"/><text x="560" y="124" text-anchor="middle" class="h">bug / 测试失败 / 异常行为</text>
+  <rect x="100" y="220" width="220" height="70" class="d"/><text x="210" y="248" text-anchor="middle" class="h">阶段 1：根因调查</text><text x="210" y="270" text-anchor="middle" class="s">复现、读错误、追数据流</text>
+  <rect x="450" y="220" width="220" height="70" class="d"/><text x="560" y="248" text-anchor="middle" class="h">阶段 2：模式分析</text><text x="560" y="270" text-anchor="middle" class="s">找工作样例，比较差异</text>
+  <rect x="800" y="220" width="220" height="70" class="d"/><text x="910" y="248" text-anchor="middle" class="h">阶段 3：假设验证</text><text x="910" y="270" text-anchor="middle" class="s">单一假设，最小实验</text>
+  <rect x="230" y="415" width="240" height="70" class="tdd"/><text x="350" y="443" text-anchor="middle" class="h">阶段 4：根因修复</text><text x="350" y="465" text-anchor="middle" class="s">先写失败测试，再修复</text>
+  <rect x="650" y="415" width="240" height="70" class="v"/><text x="770" y="443" text-anchor="middle" class="h">验证修复</text><text x="770" y="465" text-anchor="middle" class="s">测试、回归、完整输出</text>
+  <rect x="425" y="610" width="270" height="58" class="v"/><text x="560" y="644" text-anchor="middle" class="h">完成后进入评审 / 收尾</text>
+  <path d="M560 148 C560 190 210 180 210 220" class="thin"/><path d="M320 255 L450 255" class="line"/><path d="M670 255 L800 255" class="line"/>
+  <path d="M910 290 C910 375 350 345 350 415" class="line"/><path d="M470 450 L650 450" class="line"/><path d="M770 485 C770 545 560 545 560 610" class="line"/>
+  <path d="M770 415 C770 360 210 360 210 290" class="thin"/><text x="510" y="355" text-anchor="middle" class="s">假设不成立或 3 次失败，回到调查</text>
+</svg>

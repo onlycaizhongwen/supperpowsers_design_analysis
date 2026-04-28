@@ -1,0 +1,4 @@
+.ai/logs/
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1120" viewBox="0 0 1180 1120" role="img" aria-labelledby="title desc">
+  <title id="title">superpowers 总流程图</title>
+  <desc id="desc">展示平台接入、using-superpowers 启动、技能分流、执行评审、验证收尾与发布维护的主流程。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <style>
+      .title { font: 700 28px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; }
+      .label { font: 600 16px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #0f172a; }
+      .small { font: 500 14px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #334155; }
+      .muted { font: 500 13px "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; fill: #64748b; }
+      .box { fill: #f8fafc; stroke: #334155; stroke-width: 1.5; rx: 10; }
+      .platform { fill: #eff6ff; stroke: #2563eb; }
+      .core { fill: #fef3c7; stroke: #d97706; }
+      .skill { fill: #ecfdf5; stroke: #059669; }
+      .review { fill: #fdf2f8; stroke: #db2777; }
+      .finish { fill: #f1f5f9; stroke: #475569; }
+      .line { stroke: #334155; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+      .thin { stroke: #94a3b8; stroke-width: 1.2; fill: none; marker-end: url(#arrow); }
+      .band { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1; rx: 14; }
+    </style>
+  </defs>
+
+  <rect x="20" y="20" width="1140" height="1080" class="band"/>
+  <text x="590" y="62" text-anchor="middle" class="title">superpowers 平台接入与开发工作流总图</text>
+
+  <rect x="465" y="95" width="250" height="52" class="box"/>
+  <text x="590" y="126" text-anchor="middle" class="label">用户安装或启用 Superpowers</text>
+
+  <rect x="500" y="185" width="180" height="58" class="platform"/>
+  <text x="590" y="209" text-anchor="middle" class="label">宿主平台</text>
+  <text x="590" y="229" text-anchor="middle" class="muted">Claude / Codex / Cursor / OpenCode / Gemini</text>
+  <path d="M590 147 L590 185" class="line"/>
+
+  <rect x="80" y="300" width="220" height="74" class="platform"/>
+  <text x="190" y="328" text-anchor="middle" class="label">Claude / Cursor</text>
+  <text x="190" y="350" text-anchor="middle" class="small">plugin manifest</text>
+  <text x="190" y="368" text-anchor="middle" class="small">SessionStart hook</text>
+
+  <rect x="345" y="300" width="220" height="74" class="platform"/>
+  <text x="455" y="328" text-anchor="middle" class="label">Codex</text>
+  <text x="455" y="350" text-anchor="middle" class="small">.codex-plugin/plugin.json</text>
+  <text x="455" y="368" text-anchor="middle" class="small">native skill discovery</text>
+
+  <rect x="615" y="300" width="220" height="74" class="platform"/>
+  <text x="725" y="328" text-anchor="middle" class="label">OpenCode</text>
+  <text x="725" y="350" text-anchor="middle" class="small">插件 JS 注册 skills path</text>
+  <text x="725" y="368" text-anchor="middle" class="small">首条消息注入 bootstrap</text>
+
+  <rect x="880" y="300" width="220" height="74" class="platform"/>
+  <text x="990" y="328" text-anchor="middle" class="label">Gemini</text>
+  <text x="990" y="350" text-anchor="middle" class="small">GEMINI.md</text>
+  <text x="990" y="368" text-anchor="middle" class="small">extension 配置与工具映射</text>
+
+  <path d="M590 243 C590 270 190 270 190 300" class="thin"/>
+  <path d="M590 243 C590 270 455 270 455 300" class="thin"/>
+  <path d="M590 243 C590 270 725 270 725 300" class="thin"/>
+  <path d="M590 243 C590 270 990 270 990 300" class="thin"/>
+
+  <rect x="430" y="430" width="320" height="60" class="core"/>
+  <text x="590" y="455" text-anchor="middle" class="label">using-superpowers 入口纪律层</text>
+  <text x="590" y="477" text-anchor="middle" class="small">先检查并加载适用 skill</text>
+  <path d="M190 374 C190 410 590 400 590 430" class="thin"/>
+  <path d="M455 374 C455 405 590 400 590 430" class="thin"/>
+  <path d="M725 374 C725 405 590 400 590 430" class="thin"/>
+  <path d="M990 374 C990 410 590 400 590 430" class="thin"/>
+
+  <rect x="495" y="540" width="190" height="58" class="core"/>
+  <text x="590" y="565" text-anchor="middle" class="label">用户请求类型</text>
+  <text x="590" y="586" text-anchor="middle" class="small">按任务语义分流</text>
+  <path d="M590 490 L590 540" class="line"/>
+
+  <rect x="70" y="660" width="210" height="70" class="skill"/>
+  <text x="175" y="689" text-anchor="middle" class="label">brainstorming</text>
+  <text x="175" y="711" text-anchor="middle" class="small">澄清目标，形成设计</text>
+
+  <rect x="340" y="660" width="210" height="70" class="skill"/>
+  <text x="445" y="689" text-anchor="middle" class="label">writing-plans</text>
+  <text x="445" y="711" text-anchor="middle" class="small">拆分实施计划</text>
+
+  <rect x="610" y="660" width="230" height="70" class="skill"/>
+  <text x="725" y="689" text-anchor="middle" class="label">TDD / debugging</text>
+  <text x="725" y="711" text-anchor="middle" class="small">实现节奏与根因排查</text>
+
+  <rect x="900" y="660" width="220" height="70" class="skill"/>
+  <text x="1010" y="689" text-anchor="middle" class="label">subagent / executing</text>
+  <text x="1010" y="711" text-anchor="middle" class="small">子代理或批量执行</text>
+
+  <path d="M590 598 C590 630 175 625 175 660" class="thin"/>
+  <path d="M590 598 C590 630 445 625 445 660" class="thin"/>
+  <path d="M590 598 C590 630 725 625 725 660" class="thin"/>
+  <path d="M590 598 C590 630 1010 625 1010 660" class="thin"/>
+  <path d="M280 695 L340 695" class="line"/>
+  <path d="M550 695 L610 695" class="line"/>
+  <path d="M840 695 L900 695" class="line"/>
+
+  <rect x="320" y="810" width="230" height="70" class="review"/>
+  <text x="435" y="838" text-anchor="middle" class="label">规格符合性评审</text>
+  <text x="435" y="860" text-anchor="middle" class="small">确认实现符合计划</text>
+
+  <rect x="630" y="810" width="230" height="70" class="review"/>
+  <text x="745" y="838" text-anchor="middle" class="label">代码质量评审</text>
+  <text x="745" y="860" text-anchor="middle" class="small">检查质量、风险与缺口</text>
+
+  <path d="M1010 730 C1010 785 435 760 435 810" class="line"/>
+  <path d="M550 845 L630 845" class="line"/>
+  <path d="M745 880 C745 930 1010 930 1010 730" class="thin"/>
+  <text x="875" y="925" text-anchor="middle" class="muted">未通过则回修</text>
+
+  <rect x="465" y="955" width="250" height="58" class="finish"/>
+  <text x="590" y="981" text-anchor="middle" class="label">verification / review / finish</text>
+  <text x="590" y="1002" text-anchor="middle" class="small">验证完成条件，评审，收尾合并或保留</text>
+  <path d="M745 880 C745 925 590 915 590 955" class="line"/>
+  <path d="M725 730 C725 800 590 890 590 955" class="thin"/>
+
+  <rect x="420" y="1040" width="340" height="42" class="finish"/>
+  <text x="590" y="1066" text-anchor="middle" class="label">tests / docs / scripts 支撑跨平台发布与维护</text>
+  <path d="M590 1013 L590 1040" class="line"/>
+</svg>

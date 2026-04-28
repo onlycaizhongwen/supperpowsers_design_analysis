@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="850" viewBox="0 0 1120 850" role="img" aria-labelledby="title desc">
+  <title id="title">实现执行分支流程图</title>
+  <desc id="desc">展示 using-git-worktrees、subagent-driven-development、executing-plans 和 TDD 的执行分支。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker><style>.bg{fill:#fff;stroke:#cbd5e1;stroke-width:1.2;rx:12}.iso{fill:#eff6ff;stroke:#2563eb;stroke-width:1.4;rx:10}.exec{fill:#ecfdf5;stroke:#059669;stroke-width:1.4;rx:10}.rev{fill:#fdf2f8;stroke:#db2777;stroke-width:1.4;rx:10}.warn{fill:#fff7ed;stroke:#ea580c;stroke-width:1.4;rx:10}.line{stroke:#334155;stroke-width:1.4;fill:none;marker-end:url(#arrow)}.thin{stroke:#94a3b8;stroke-width:1.2;fill:none;marker-end:url(#arrow)}text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#0f172a}.t{font-size:24px;font-weight:700}.h{font-size:16px;font-weight:700}.s{font-size:13px;font-weight:500;fill:#475569}</style></defs>
+  <rect x="20" y="20" width="1080" height="810" class="bg"/>
+  <text x="560" y="58" text-anchor="middle" class="t">实现执行分支</text>
+  <rect x="435" y="90" width="250" height="58" class="iso"/><text x="560" y="124" text-anchor="middle" class="h">已有实施计划</text>
+  <rect x="395" y="200" width="330" height="68" class="iso"/><text x="560" y="228" text-anchor="middle" class="h">using-git-worktrees</text><text x="560" y="250" text-anchor="middle" class="s">选择目录，校验忽略规则，创建隔离工作区</text>
+  <rect x="195" y="335" width="260" height="70" class="exec"/><text x="325" y="362" text-anchor="middle" class="h">Subagent-Driven</text><text x="325" y="385" text-anchor="middle" class="s">每个任务派发新子代理</text>
+  <rect x="665" y="335" width="260" height="70" class="exec"/><text x="795" y="362" text-anchor="middle" class="h">Inline Executing</text><text x="795" y="385" text-anchor="middle" class="s">当前会话按计划批量执行</text>
+  <rect x="80" y="485" width="230" height="66" class="exec"/><text x="195" y="512" text-anchor="middle" class="h">实现子代理</text><text x="195" y="535" text-anchor="middle" class="s">实现、测试、自查、提交</text>
+  <rect x="365" y="485" width="230" height="66" class="rev"/><text x="480" y="512" text-anchor="middle" class="h">规格符合性评审</text><text x="480" y="535" text-anchor="middle" class="s">是否满足计划</text>
+  <rect x="650" y="485" width="230" height="66" class="rev"/><text x="765" y="512" text-anchor="middle" class="h">代码质量评审</text><text x="765" y="535" text-anchor="middle" class="s">质量、风险、缺口</text>
+  <rect x="830" y="625" width="230" height="66" class="warn"/><text x="945" y="652" text-anchor="middle" class="h">有问题</text><text x="945" y="675" text-anchor="middle" class="s">回到实现分支修正</text>
+  <rect x="365" y="625" width="230" height="66" class="exec"/><text x="480" y="652" text-anchor="middle" class="h">TDD 实现循环</text><text x="480" y="675" text-anchor="middle" class="s">RED -> GREEN -> REFACTOR</text>
+  <rect x="435" y="750" width="250" height="58" class="rev"/><text x="560" y="784" text-anchor="middle" class="h">最终评审与完成前验证</text>
+  <path d="M560 148 L560 200" class="line"/><path d="M560 268 C560 310 325 300 325 335" class="thin"/><path d="M560 268 C560 310 795 300 795 335" class="thin"/>
+  <path d="M325 405 C325 450 195 445 195 485" class="line"/><path d="M310 518 L365 518" class="line"/><path d="M595 518 L650 518" class="line"/>
+  <path d="M765 551 C765 610 945 585 945 625" class="thin"/><path d="M945 691 C945 735 195 720 195 551" class="thin"/>
+  <path d="M795 405 C795 520 480 525 480 625" class="thin"/><path d="M480 691 C480 725 560 720 560 750" class="line"/><path d="M765 551 C765 705 560 700 560 750" class="line"/>
+</svg>
