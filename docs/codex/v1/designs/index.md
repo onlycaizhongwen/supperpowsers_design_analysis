@@ -6,8 +6,14 @@
 
 1. [总体架构与流程说明](superpowers-architecture-design.md)
 2. [分支执行流程说明](superpowers-branch-flow-design.md)
-3. [总体流程图 HTML 预览](assets/superpowers-flow.html)
-4. [分支流程图 HTML 预览](assets/superpowers-branch-flows.html)
+3. 单技能分析：
+   - [using-superpowers 技能分析](skills/using-superpowers-skill-analysis.md)
+   - [subagent-driven-development 技能分析](skills/subagent-driven-development-skill-analysis.md)
+   - [brainstorming 技能分析](skills/brainstorming-skill-analysis.md)
+   - [test-driven-development 技能分析](skills/test-driven-development-skill-analysis.md)
+   - [systematic-debugging 技能分析](skills/systematic-debugging-skill-analysis.md)
+4. [总体流程图 HTML 预览](assets/superpowers-flow.html)
+5. [分支流程图 HTML 预览](assets/superpowers-branch-flows.html)
 
 ## 核心结论
 
@@ -24,6 +30,16 @@
 | 调试分支先找根因再修复 | `systematic-debugging` 要求先调查、分析、验证假设，再实施修复 | `superpowers/skills/systematic-debugging/SKILL.md` |
 | 完成声明必须有证据 | `verification-before-completion` 要求先运行完整验证命令，再声明完成 | `superpowers/skills/verification-before-completion/SKILL.md` |
 | 收尾分支由用户选择合并/PR/保留/丢弃 | `finishing-a-development-branch` 定义测试验证和四类收尾选项 | `superpowers/skills/finishing-a-development-branch/SKILL.md` |
+
+## 单技能分析
+
+| 技能 | 文档 | 重点 |
+|---|---|---|
+| `using-superpowers` | [using-superpowers 技能分析](skills/using-superpowers-skill-analysis.md) | 入口纪律、技能优先级、跨平台适配 |
+| `subagent-driven-development` | [subagent-driven-development 技能分析](skills/subagent-driven-development-skill-analysis.md) | 子代理状态机、两阶段评审、实现闭环 |
+| `brainstorming` | [brainstorming 技能分析](skills/brainstorming-skill-analysis.md) | 需求澄清、设计确认、计划前硬门槛 |
+| `test-driven-development` | [test-driven-development 技能分析](skills/test-driven-development-skill-analysis.md) | RED-GREEN-REFACTOR、失败测试铁律 |
+| `systematic-debugging` | [systematic-debugging 技能分析](skills/systematic-debugging-skill-analysis.md) | 根因调查、假设验证、修复回路 |
 
 ## 图表文件
 
